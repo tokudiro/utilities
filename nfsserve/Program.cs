@@ -74,6 +74,7 @@ sealed class MainForm : Form
         }
 
         Text = "nfsserve";
+        Icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath!) ?? SystemIcons.Application;
         ClientSize = new Size(640, 520);
         StartPosition = FormStartPosition.CenterScreen;
 
